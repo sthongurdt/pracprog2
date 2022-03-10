@@ -1,0 +1,9 @@
+El comando xdg-open es
+muy útil cuando quieres
+abrir algún programa 
+cualquiera, sin embargo,
+hay algunos programas
+que traen sus propias
+funcionalidades integradas
+por medio de sus propios
+comandos.

@@ -1,0 +1,9 @@
+total 72K
+drwxrwxrwx  3 prb prb 4,0K feb 10 08:51 .
+drwxr-xr-x 22 prb prb 4,0K feb 10 08:31 ..
+-rw-rw-r--  1 prb prb    0 feb 10 08:51 lsprb.txt
+drwxrwxrwx  3 prb prb 4,0K feb 10 08:50 notebooks
+-rw-rw-r--  1 prb prb    0 feb  8 08:42 prb1
+-rw-rw-r--  1 prb prb    0 feb  8 08:42 prb2
+-rw-rw-r--  1 prb prb  55K feb  8 07:10 prb.jpg
+-rw-rw-r--  1 prb prb  202 feb  8 06:50 prb.txt
