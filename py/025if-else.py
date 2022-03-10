@@ -61,3 +61,9 @@ if x > 10:
     print("y por encima de 20!")
   else:
     print("Pero no por encima de 20.") 
+
+# si tiene un condicional if, pero no tiene nada para colocar en el, use la declaracion pass para que no se genere un error.
+a = 33
+b = 200
+if b > a:
+  pass
