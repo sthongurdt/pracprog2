@@ -28,3 +28,17 @@ print(lst)
 # si desea eliminar un elemento por su valor
 lst.remove('lulo')
 print(lst)
+
+# Estos son todos los metodos del array:
+# append() Agrega un elemento al final de la lista
+# clear() Elimina todos los elementos de la lista
+# copy() Devuelve una copia de la lista
+# count() Devuelve el número de elementos con el valor especificado
+# extend() Agrega los elementos de una lista (o cualquier iterable), al final de la lista actual
+# index() Devuelve el índice del primer elemento con el valor especificado
+# insert() Agrega un elemento en la posición especificada
+# pop() Elimina el elemento en la posición especificada
+# remove() Elimina el primer elemento con el valor especificado
+# reverse() Invierte el orden de la lista
+# sort() Ordena la lista
+#
