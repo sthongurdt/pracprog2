@@ -8,7 +8,7 @@
 # Se puede especificar si el archivo debe manejarse como modo binario o de texto.
 #   t   Texto - Valor por defecto. Modo de texto
 #   b   Binario - Modo binario (por ejemplo, imágenes) 
-f = open('/home/prb/prb/pracprog2/py/prb.txt', "r")
+f = open('prb.txt', "r")
 
 # La función open() devuelve un objeto de archivo, que tiene un método read() para leer el contenido del archivo: 
 #print(f.read()) 
