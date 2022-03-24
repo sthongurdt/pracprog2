@@ -1,7 +1,7 @@
 # un modulo se puede considerar como una libreria, puede contener todas las funciones necesarias para el funcionamiento
 # de una app.
 
-import mdl
+import py.check.mdl as mdl
 
 mdl.prbmdl('Alex')
 
