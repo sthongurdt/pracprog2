@@ -1,4 +1,4 @@
-from operator import index
+'''from operator import index
 import pandas as pd
 
 dic1 = {'a':[1,2,3,4], 'b':[2,3,4,5], 'c':[3,4,5,6]}
@@ -17,4 +17,15 @@ df3 = pd.concat([df1,df2])
 print(df3)
 df4 = df3.drop_duplicates()
 print('-----------------')
-print(df4)
+print(df4)'''
+
+def miGenerador(limite):
+    num = 1
+    while (num <= limite):
+        yield num*2
+        num = num + 1
+        
+pares = miGenerador(10) # <--- Creación del objeto iterable.
+
+for i in pares: # <--- Se recorre el objeto iterable.
+    print (i)
