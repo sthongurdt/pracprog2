@@ -144,4 +144,24 @@ plt.show()
 #	twilight 	twilight_r 	
 #	twilight_shifted 	twilight_shifted_r 	
 #	viridis 	viridis_r 	
-#	winter 	winter_r# 
+#	winter 	    winter_r# 
+
+# los punto en scatter puede tener su propio tamaña
+tam = np.array([20,50,100,200,500,1000,60,90,10,300,600,800,75])
+
+plt.scatter(x, y, s = tam)
+plt.show()
+
+# los puntos pueden tener transparencias con el argumento alpha
+plt.scatter(x, y, s=tam, alpha=0.5)
+plt.show()
+
+# todos los argumentos mencionados pueden combinarse para mejorar el grafico
+x = np.random.randint(100, size=(100))
+y = np.random.randint(100, size=(100))
+clr = np.random.randint(100, size=(100))
+tam = 10 * np.random.randint(100, size=(100))
+
+plt.scatter(x, y, c=clr, s=tam, alpha=0.5, cmap='nipy_spectral')
+plt.colorbar()
+plt.show() 
