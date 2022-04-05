@@ -62,5 +62,20 @@ print(pow(DE2, 2))
 e = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]
 print(np.percentile(e, 80))
 # cual es el precentil 80 o significa que el 80% de los valores es 48 o menos
+
 # cual seria el percentil 40
 print(np.percentile(e, 40))
+
+# los data sets pueden llegar a ser inmensos, NumPy posee una serie de metodos para crear un conjunto de datos de prueba de cualquier tamaño.
+# se generan 250 datos entre 0.0 y 5.0
+import matplotlib.pyplot as plt
+x = np.random.uniform(0.0, 5.0, 250)
+
+#un histograma permitiria visualizar los datos
+plt.hist(x, 5)
+plt.show()
+
+# si desea crear 100000 numeros aleatorios y mostrarlo en un histograma de 100 pasos
+y = np.random.uniform(0.0, 5.0, 100000)
+plt.hist(y, 100)
+plt.show()
