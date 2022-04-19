@@ -17,3 +17,6 @@ print(x, type(x), y, type(y), z, type(z))
 a = 4
 A = 'A'
 print('a =',a,' | type(a) =',type(a),' | A =',A,' | type(A) =',type(A))
+
+x = "hello"[0]
+print(x)

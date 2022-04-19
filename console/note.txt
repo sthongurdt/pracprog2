@@ -1,0 +1,70 @@
+# Comandos basicos de terminal
+
+- ls -> lista los archivos
+    - ls -lh -> Listar archivos para ver su peso de una manera mas mas legible
+    - ls -al -> Lista todos los archivos del directorio
+
+- cd -> permite navegar entre directorios
+    - cd .. -> permite volver a la carpeta anterior
+
+- clear -> limpia la linea de comandos se puede usar ctrl + l
+
+- mkdir nombreCarpeta -> crea directorios
+    - mkdir s1 s2 s3 -> crea los directorios s1, s2, s3
+
+- cp dir/del/archivo/copiado dir/del/archivo/donde/se/va/copiar -> copia archivos
+
+- rm -> borra archivos
+    - rm -rf dir/del/archivo/carpeta ->elimina archvos o carpetas pero es peligroso
+
+- mv dir/donde/esta/el/archivo dir/donde/estara/el/archivo -> mueve o renombra archivos
+
+- file a1.txt -> muestra las caracteristicas del archivos
+
+- rmdir -> elimina directorios
+
+- tree -> lista los directorios como un arbol
+    - tree -L # -> lista un numero (#) de niveles
+
+- touch -> crea archivos sin formato
+    - touch a1 a2 a3 -> crea multiples archivos
+
+- head -> muestra las primeras 10 lineas del archivo
+    - head -n # archivo -> lista las primeras n(#) lineas del archivo
+
+- tail -> muestra las ultimas 10 lineas del archivo
+    - tail -n # archivo -> lista las ultimas n(#) lineas del archivo
+
+- less -> muestra todo el contenido del archivo
+
+- xdg-open -> abre el archivo en un entorno grafico
+
+- ctrl + c -> calcela cualquier proceso que se este ejecutando en la terminal
+
+- nautilus -> abre el sistema de archivos de linux
+
+- type -> permite ver el tipo de algo, saber si es un comando, binario o alias
+
+- alias l = "ls -al" -> crea el alias l, pero es temporal
+
+- man -> invoca el manual de un comando
+
+- info -> muestra la informacion de un camando
+
+- whatis -> muestra la descripcion resumida de un comando
+
+- wildcards -> permite realizar busqueda de patrones
+    - * -> toma cualquier valor
+        - ls *.txt -> lista todos los archivos txt
+        - ls D* -> lista todo lo que comience con D
+    - ? -> toma solo un caracter
+        - ls prb? -> lista todos los archivos que tengan un caracter despues de prb
+        - ls pr?? -> lista todos los archivos que tengan dos caracteres despues de pr
+    - [] -> permite la agrupacion de resultados
+        - ls [[:upper:]]* -> lista todo lo que tenga como primera caracter una mayuscula
+        - ls -d [[:upper:]]* -> lista solo los directorios que inicien por una mayuscula
+        - ls -d [[:lower:]]* -> lista las carpetas que inicien con minusculas
+        - ls [ap]* -> lista los archivos que inicien o contengan a o p.
+    - [:alnum:] -> Coincide con cualquier carácter alfanumérico
+    - [:alpha:] -> Coincide con cualquier carácter alfabético
+    - [:digit:] -> Coincide con cualquier número
