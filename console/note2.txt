@@ -1,0 +1,93 @@
+########################
+# variables de entorno
+########################
+
+- ln -> genera link simbolicos, hace referencia a un lugar. Un acceso directo
+    - ln -s /prb/prbi prblink
+
+- printenv -> muestra todas las variables de entorno configuradas
+
+- variables de necesario conocimiento:
+    - echo $HOME
+    - echo $PATH
+
+- modificacion de variables de entorno. En la carpeta $HOME busque el archivo .bashrc y abralo con un editor de texto.
+- busque la ultima linea y agregue HOLA='Hola Mundo', guarde y ejecute en la terminal la palabra bash
+- en la terminal escriba echo $HOLA
+
+- para modificar el PATH, modifica el archivo .bashrc, debajo de la linea HOLA agrega:
+    - PATH=PATH:/ruta/del/bin/que/desea/agregar
+
+########################
+# comandos de busqueda
+########################
+
+- whereis -> muestra la direccion donde se encuentran los binarios
+
+- which -> muestra la ruta de los binarios
+
+- find -> permite buscar un archivo
+    - find ./ -name archivo
+    - find ./ -name *.txt | less
+    - find ./ -type d -name D*
+    - find ./ -type f -name *.log
+    - find ./ -size 20M
+
+########################
+# GREP
+########################
+
+- grep -> encuentra coincidencias dentro de un archivo de texto
+    - grep the archivo.txt
+    - grep -i the archivo.txt
+    - grep -ic the archivo.txt
+    - grep -vi tower archivo.txt
+
+- wc - cuenta la catidad de lineas, palabras y bits de un archivo
+    - wc archivo.csv
+    - wc -l archivo.csv -> cantidad de lineas
+    - wc -w archivo.csv -> cantidad de palabras
+    - wc -c archivo.csv -> cantidad de bits
+
+########################
+# utilidades de red
+########################
+
+- ifconfig -> muestra informacion de nuestra red
+
+- ping -> muestra si una pagina esta activa, tambien demuestra si la coneccion de red funciona bien
+
+- curl -> muestra el texto de la pagina
+    - curl www.google.com > prb.html
+
+- wget -> trae desde web
+    - wget wwww.google.com
+
+- traceroute -> muestra todos los puntos por los que pasa una conexion
+    - traceroute www.google.com
+
+- netstat -> muestra las conexiones de red, tablas de rutas, interfaces staticas, mascaras de conexion y multicast
+    - netstat -i
+
+- ip a -> realiza un trabajo similar a ifconfig
+
+########################
+# Compresion de Archivos
+########################
+
+- tar -> comprime el archivo, las banderas:
+    c   comprime
+    v   muestra lo que se comprime
+    f   un archivo
+    z   usa gzip para comprimir
+    x   descomprime
+    - tar -cvf comprimido.tar /dir/de/lo/que/se/va/a/comprimir
+    - tar -cvzf comprimido.tar.gz /dir/de/lo/que/se/va/a/comprimir
+    - tar -xvzf comprimido.tar.gz /dir/donde/se/va/a/descomprimir
+
+- zip -> comprime un archivo, las banderas:
+    r   recursivo
+    - zip -r comprimido.zip /dir/de/lo/que/se/va/a/comprimir
+
+- unzip -> descomprime el archivo
+    - umzip comprimido.zip /dir/donde/se/va/a/descomprimir
