@@ -90,4 +90,33 @@
     - zip -r comprimido.zip /dir/de/lo/que/se/va/a/comprimir
 
 - unzip -> descomprime el archivo
-    - umzip comprimido.zip /dir/donde/se/va/a/descomprimir
+    - umzip comprimido.zip /dir/donde/se/va/a/descomprimir -> /dir/donde/se/va/a/descomprimir es opcional
+
+########################
+# Admin. de procesos
+########################
+
+- ps -> muestra los proceso en ejecucion
+
+- kill #PID -> elimina el proceso con el PID
+
+- top -> muestra una lista de todos los procesos
+
+- htop -> es la evolucion de top
+
+- fg #PID -> traeel proceso a foregorund
+
+- bg #PID -> envia el proceso al background
+
+########################
+# Editores de texto terminal
+########################
+
+- vi -> editor de texto
+
+- vim -> editor moderno de vi
+
+- emacs
+
+- nano
+
